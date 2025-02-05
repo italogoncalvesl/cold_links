@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "white-main": "#F6F6F5",
+      },
+      fontFamily: {
+        varien: ["varien", "sans-serif"],
+        jura: ["jura", "sans-serif"],
+      },
+      backgroundImage: {
+        "bg-image": "url(/images/background.png)",
       },
     },
   },
