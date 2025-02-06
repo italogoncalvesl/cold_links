@@ -3,13 +3,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-black/90  items-center bg-bg-image flex-col bg-cover overflow-auto pt-24">
+    <div className="flex h-screen bg-black/90  items-center bg-bg-image flex-col bg-cover overflow-auto pt-20">
       <Image
         src={"/logo_c.svg"}
         alt="Logo do C"
         height={150}
         width={150}
         className="w-[35%]"
+        priority
       />
       <p className="flex text-white-main font-varien mt-4 text-xl">
         Cold Suplementos
@@ -51,6 +52,7 @@ export default function Home() {
             height={1200}
             width={500}
             className="w-3/4 rounded-md flex shadow-black/30 shadow-lg mt-2"
+            priority
           />
         </a>
       </div>
@@ -65,6 +67,7 @@ export default function Home() {
             height={1350}
             width={1075}
             className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
+            priority
           />
           <Image
             src={"/images/pre-treino.png"}
@@ -72,6 +75,7 @@ export default function Home() {
             height={1350}
             width={1075}
             className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
+            priority
           />
           <Image
             src={"/images/pre-treino.png"}
@@ -79,6 +83,7 @@ export default function Home() {
             height={1350}
             width={1075}
             className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
+            priority
           />
           <Image
             src={"/images/pre-treino.png"}
@@ -86,6 +91,7 @@ export default function Home() {
             height={1350}
             width={1075}
             className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
+            priority
           />
         </div>
       </div>
@@ -99,6 +105,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_02.jpg"
@@ -106,6 +113,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_03.jpg"
@@ -113,6 +121,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_04.jpg"
@@ -120,6 +129,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_05.jpg"
@@ -127,6 +137,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_06.jpg"
@@ -134,6 +145,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_07.jpg"
@@ -141,6 +153,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_10.jpg"
@@ -148,6 +161,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_01.jpg"
@@ -155,6 +169,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_02.jpg"
@@ -162,6 +177,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_03.jpg"
@@ -169,6 +185,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_04.jpg"
@@ -176,6 +193,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_05.jpg"
@@ -183,6 +201,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_06.jpg"
@@ -190,6 +209,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_07.jpg"
@@ -197,6 +217,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
             <Image
               src="/images/carrossel/Produtos_10.jpg"
@@ -204,6 +225,7 @@ export default function Home() {
               height={50}
               width={50}
               className="rounded-md shadow-black/30 shadow-lg"
+              priority
             />
           </div>
         </div>
