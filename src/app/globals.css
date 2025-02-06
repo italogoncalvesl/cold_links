@@ -27,24 +27,17 @@ body {
   font-style: normal;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 18s linear infinite;
-}
-
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Oculta a barra no Chrome, Safari */
+  display: none;
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none; /* Oculta a barra no Edge e IE */
-  scrollbar-width: none; /* Oculta a barra no Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
 }

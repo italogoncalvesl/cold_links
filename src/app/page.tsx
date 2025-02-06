@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Instagram, Location, Whatsapp } from "iconsax-react";
 import Image from "next/image";
 
@@ -61,14 +64,16 @@ export default function Home() {
           Confira nossas postagens
         </p>
         <div className="flex flex-row gap-x-3 justify-start w-full overflow-x-auto px-12 hide-scrollbar">
-          <Image
-            src={"/images/pre-treino.png"}
-            alt="Logo do C"
-            height={1350}
-            width={1075}
-            className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
-            priority
-          />
+          <a href="https://www.instagram.com/p/DBzWKoXR-p2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+            <Image
+              src={"/images/pre-treino.png"}
+              alt="Logo do C"
+              height={1350}
+              width={1075}
+              className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
+              priority
+            />
+          </a>
           <Image
             src={"/images/pre-treino.png"}
             alt="Logo do C"
@@ -96,139 +101,149 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="overflow-hidden relative top-16">
-        <div className="flex animate-marquee">
-          <div className="flex gap-x-4">
-            <Image
-              src="/images/carrossel/Produtos_01.jpg"
-              alt="Imagem 1"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_02.jpg"
-              alt="Imagem 2"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_03.jpg"
-              alt="Imagem 3"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_04.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_05.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_06.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_07.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_10.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_01.jpg"
-              alt="Imagem 1"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_02.jpg"
-              alt="Imagem 2"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_03.jpg"
-              alt="Imagem 3"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_04.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_05.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_06.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_07.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_10.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-          </div>
-        </div>
+      <div className="flex space-x-4 overflow-hidden mt-10">
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
+          className="flex flex-shrink-0 space-x-4"
+        >
+          <Image
+            src="/images/carrossel/Produtos_01.jpg"
+            alt="Imagem 1"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_02.jpg"
+            alt="Imagem 2"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_03.jpg"
+            alt="Imagem 3"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_04.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_05.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_06.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_07.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_10.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+        </motion.div>
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
+          className="flex flex-shrink-0 space-x-4"
+        >
+          <Image
+            src="/images/carrossel/Produtos_01.jpg"
+            alt="Imagem 1"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_02.jpg"
+            alt="Imagem 2"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_03.jpg"
+            alt="Imagem 3"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_04.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_05.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_06.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_07.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/carrossel/Produtos_10.jpg"
+            alt="Imagem 4"
+            height={50}
+            width={50}
+            className="rounded-md shadow-black/30 shadow-lg"
+            priority
+          />
+        </motion.div>
       </div>
     </div>
   );
