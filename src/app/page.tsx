@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Location, Whatsapp } from "iconsax-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,41 +64,59 @@ export default function Home() {
         <p className="flex text-white-main font-jura text-center w-full justify-center text-sm ">
           Confira nossas postagens
         </p>
-        <div className="flex flex-row gap-x-3 justify-start w-full overflow-x-auto px-12 hide-scrollbar">
-          <a href="https://www.instagram.com/p/DBzWKoXR-p2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+        <div className="flex flex-row gap-x-3 justify-start w-full overflow-x-auto px-12 hide-scrollbar h-full min-x">
+          <Link
+            href="https://www.instagram.com/coldsuplementos/"
+            className="flex-shrink-0"
+          >
             <Image
               src={"/images/pre-treino.png"}
               alt="Logo do C"
-              height={1350}
-              width={1075}
-              className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
+              height={160}
+              width={127}
+              className="rounded-md flex shadow-black/30 shadow-lg mt-2"
               priority
             />
-          </a>
-          <Image
-            src={"/images/pre-treino.png"}
-            alt="Logo do C"
-            height={1350}
-            width={1075}
-            className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
-            priority
-          />
-          <Image
-            src={"/images/pre-treino.png"}
-            alt="Logo do C"
-            height={1350}
-            width={1075}
-            className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
-            priority
-          />
-          <Image
-            src={"/images/pre-treino.png"}
-            alt="Logo do C"
-            height={1350}
-            width={1075}
-            className="max-w-[35%] rounded-md flex shadow-black/30 shadow-lg mt-2 "
-            priority
-          />
+          </Link>
+          <Link
+            href="https://www.instagram.com/coldsuplementos/"
+            className="flex-shrink-0"
+          >
+            <Image
+              src={"/images/pre-treino.png"}
+              alt="Logo do C"
+              height={160}
+              width={127}
+              className="rounded-md flex shadow-black/30 shadow-lg mt-2"
+              priority
+            />
+          </Link>
+          <Link
+            href="https://www.instagram.com/coldsuplementos/"
+            className="flex-shrink-0"
+          >
+            <Image
+              src={"/images/pre-treino.png"}
+              alt="Logo do C"
+              height={160}
+              width={127}
+              className="rounded-md flex shadow-black/30 shadow-lg mt-2"
+              priority
+            />
+          </Link>
+          <Link
+            href="https://www.instagram.com/coldsuplementos/"
+            className="flex-shrink-0"
+          >
+            <Image
+              src={"/images/pre-treino.png"}
+              alt="Logo do C"
+              height={160}
+              width={127}
+              className="rounded-md flex shadow-black/30 shadow-lg mt-2"
+              priority
+            />
+          </Link>
         </div>
       </div>
 

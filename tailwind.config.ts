@@ -21,7 +21,7 @@ export default {
         "bg-image": "url(/images/background.png)",
       },
       animation: {
-        "loop-scroll": "loop-scroll 7s linear infinite",
+        "loop-scroll": "loop-scroll 16s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
