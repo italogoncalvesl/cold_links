@@ -66,11 +66,11 @@ export default function Home() {
         </p>
         <div className="flex flex-row gap-x-3 justify-start w-full overflow-x-auto px-12 hide-scrollbar h-full min-x">
           <Link
-            href="https://www.instagram.com/coldsuplementos/"
+            href="https://www.instagram.com/p/DH6fQs-x7Hw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             className="flex-shrink-0"
           >
             <Image
-              src={"/images/pre-treino.png"}
+              src={"/images/açaoAbril.jpg"}
               alt="Logo do C"
               height={160}
               width={127}
@@ -79,11 +79,11 @@ export default function Home() {
             />
           </Link>
           <Link
-            href="https://www.instagram.com/coldsuplementos/"
+            href="https://www.instagram.com/p/DHD0QwwRTaF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             className="flex-shrink-0"
           >
             <Image
-              src={"/images/pre-treino.png"}
+              src={"/images/sudract.jpg"}
               alt="Logo do C"
               height={160}
               width={127}
@@ -92,11 +92,11 @@ export default function Home() {
             />
           </Link>
           <Link
-            href="https://www.instagram.com/coldsuplementos/"
+            href="https://www.instagram.com/p/DHn2gyARj_f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             className="flex-shrink-0"
           >
             <Image
-              src={"/images/pre-treino.png"}
+              src={"/images/whey.jpg"}
               alt="Logo do C"
               height={160}
               width={127}
@@ -105,7 +105,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            href="https://www.instagram.com/coldsuplementos/"
+            href="https://www.instagram.com/p/DHD0QwwRTaF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             className="flex-shrink-0"
           >
             <Image
@@ -124,7 +124,7 @@ export default function Home() {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
           className="flex flex-shrink-0 space-x-4"
         >
           <Image
