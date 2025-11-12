@@ -1,19 +1,24 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Instagram, Location, Whatsapp } from "iconsax-react";
+import {
+  Coin1,
+  Crown1,
+  EmptyWallet,
+  Instagram,
+  Location,
+  Whatsapp,
+} from "iconsax-react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex h-screen bg-black/90 items-center bg-bg-image flex-col bg-cover overflow-auto pt-20 xl:pt-10">
+    <div className="flex h-screen bg-black/90 items-center bg-bg-image flex-col bg-cover overflow-auto pt-12 lg:pt-8">
       <Image
         src={"/logo_c.svg"}
         alt="Logo do C"
         height={150}
         width={150}
-        className="w-[35%] md:w-[25%] lg:w-[15%] xl:w-[12%]"
+        className="w-[35%] md:w-[25%] lg:w-[12%] xl:w-[10%]"
         priority
       />
       <p className="flex text-white-main font-varien mt-4 text-xl">
@@ -22,7 +27,7 @@ export default function Home() {
       <div className="block 2xl:hidden">
         <div className="flex flex-row gap-x-3 mt-2">
           <a
-            href="https://wa.me/5588992449842"
+            href="https://wa.me/5588992329487"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -47,7 +52,7 @@ export default function Home() {
       <div className="hidden 2xl:block">
         <div className="flex flex-row gap-x-3 mt-2">
           <a
-            href="https://wa.me/5588992449842"
+            href="https://wa.me/5588992329487"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,358 +74,59 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center mt-7">
-        <p className="flex text-white-main font-jura text-center w-full justify-center text-sm 2xl:text-base">
-          Cadastre-se em nosso sistema de pontos!
-        </p>
-        <a
-          href="https://www.v2.donuz.co/ColdSuplementos"
-          className="flex w-full items-center justify-center"
-        >
-          <Image
-            src={"/images/banner-email.jpg"}
-            alt="Logo do C"
-            height={1200}
-            width={500}
-            className="w-3/4 md:w-[68%] lg:w-[35%] xl:w-[32%]  rounded-md flex shadow-black/30 shadow-lg mt-2"
-            priority
-          />
-        </a>
-      </div>
-      <div className="flex flex-col mt-4 items-center justify-center max-w-full 2xl:mt-8">
-        <p className="flex text-white-main font-jura text-center w-full justify-center text-sm 2xl:text-base">
-          Confira nossas postagens
-        </p>
-        <div className="block 2xl:hidden">
-          <div className="flex flex-row gap-x-3 justify-start w-full overflow-x-auto px-12 hide-scrollbar h-full min-x">
-            <Link
-              href="https://www.instagram.com/p/DH6fQs-x7Hw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/açaoAbril.jpg"}
-                alt="Logo do C"
-                height={160}
-                width={127}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/p/DHD0QwwRTaF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/sudract.jpg"}
-                alt="Logo do C"
-                height={160}
-                width={127}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/p/DHn2gyARj_f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/whey.jpg"}
-                alt="Logo do C"
-                height={160}
-                width={127}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/p/DHD0QwwRTaF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/pre-treino.png"}
-                alt="Logo do C"
-                height={160}
-                width={127}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
+      <div className="flex flex-col px-10 w-full md:w-[80%] lg:w-[50%] 2xl:w-[35%] mt-8 gap-y-6">
+        <div className=" border-verde border-2 flex w-full rounded-lg py-3 bg-verde/5 items-center px-6">
+          <Whatsapp size="42" color="#ADEA28" variant="Bold" />
+          <div className="flex flex-col ml-6">
+            <p className="font-varien text-lg">WhatsApp</p>
+            <div>
+              <p className="font-jura text-sm">
+                Atendimento personalizado para te ajudar com seus objetivos
+              </p>
+            </div>
           </div>
         </div>
-        <div className="hidden 2xl:block">
-          <div className="flex flex-row gap-x-3 justify-start w-full overflow-x-auto  px-12 hide-scrollbar h-full min-x">
-            <Link
-              href="https://www.instagram.com/p/DH6fQs-x7Hw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/açaoAbril.jpg"}
-                alt="Logo do C"
-                height={200}
-                width={180}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/p/DHD0QwwRTaF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/sudract.jpg"}
-                alt="Logo do C"
-                height={200}
-                width={180}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/p/DHn2gyARj_f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/whey.jpg"}
-                alt="Logo do C"
-                height={200}
-                width={180}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/p/DHD0QwwRTaF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-              className="flex-shrink-0"
-            >
-              <Image
-                src={"/images/pre-treino.png"}
-                alt="Logo do C"
-                height={200}
-                width={180}
-                className="rounded-md flex shadow-black/30 shadow-lg mt-2"
-                priority
-              />
-            </Link>
+        <div className=" border-verde border-2 flex w-full rounded-lg py-3 bg-verde/5 items-center px-6">
+          <Crown1 size="42" color="#ADEA28" variant="Bold" />
+          <div className="flex flex-col ml-6">
+            <p className="font-varien text-lg">Grupo vip</p>
+            <div>
+              <p className="font-jura text-sm">
+                Entre no Grupo VIP da Cold para receber condiçõe exclusivas!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className=" border-verde border-2 flex w-full rounded-lg py-3 bg-verde/5 items-center px-6">
+          <Coin1 size="42" color="#ADEA28" variant="Bold" />
+          <div className="flex flex-col ml-6">
+            <p className="font-varien text-lg">Promoções</p>
+            <div>
+              <p className="font-jura text-sm">
+                Clique para receber as promoções ativas hoje!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className=" border-verde border-2 flex w-full rounded-lg py-3 bg-verde/5 items-center px-6">
+          <EmptyWallet size="42" color="#ADEA28" variant="Bold" />
+          <div className="flex flex-col ml-6">
+            <p className="font-varien text-lg">Cold Points</p>
+            <div>
+              <p className="font-jura text-sm">
+                Receba premiações em suas compras, clique para se cadastrar!
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-24 block lg:hidden">
-        <div className="flex space-x-4 overflow-hidden mt-10">
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
-            className="flex flex-shrink-0 space-x-4"
-          >
-            <Image
-              src="/images/carrossel/Produtos_01.jpg"
-              alt="Imagem 1"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_02.jpg"
-              alt="Imagem 2"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_03.jpg"
-              alt="Imagem 3"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_04.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_05.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_06.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_07.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_10.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-          </motion.div>
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
-            className="flex flex-shrink-0 space-x-4"
-          >
-            <Image
-              src="/images/carrossel/Produtos_01.jpg"
-              alt="Imagem 1"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_02.jpg"
-              alt="Imagem 2"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_03.jpg"
-              alt="Imagem 3"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_04.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_05.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_06.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_07.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_10.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-          </motion.div>
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
-            className="flex flex-shrink-0 space-x-4"
-          >
-            <Image
-              src="/images/carrossel/Produtos_01.jpg"
-              alt="Imagem 1"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_02.jpg"
-              alt="Imagem 2"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_03.jpg"
-              alt="Imagem 3"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_04.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_05.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_06.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_07.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-            <Image
-              src="/images/carrossel/Produtos_10.jpg"
-              alt="Imagem 4"
-              height={50}
-              width={50}
-              className="rounded-md shadow-black/30 shadow-lg"
-              priority
-            />
-          </motion.div>
-        </div>
-      </div>
+      <Image
+        src={"/logo_horizontal.svg"}
+        height={80}
+        width={200}
+        alt="Logo da Cold"
+        className="flex w-[40%] mt-4 md:w-[25%] lg:w-[12%]"
+      />
     </div>
   );
 }

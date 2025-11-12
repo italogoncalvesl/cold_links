@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "white-main": "#F6F6F5",
+        verde: "#ADEA28",
       },
       fontFamily: {
         varien: ["varien", "sans-serif"],
