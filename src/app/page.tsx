@@ -67,7 +67,6 @@ export default function Home() {
         <p className="flex text-white-main font-varien text-xl mt-1 md:mt-4 md:text-2xl lg:text-xl 2xl:text-2xl">
           Cold Suplementos
         </p>
-        {/* Icones abaixo do no da Cold */}
         <div className="flex flex-row gap-x-3 md:mt-2 lg:mt-1">
           {links.map(({ href, icon: Icon }, idx) => (
             <a key={idx} href={href} target="_blank" rel="noopener noreferrer">
