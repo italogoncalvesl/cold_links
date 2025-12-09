@@ -29,21 +29,25 @@ const items = [
   {
     icon: Whatsapp,
     title: "WhatsApp",
+    href: "https://wa.me/5588992329487",
     text: "Atendimento personalizado para te ajudar com seus objetivos",
   },
   {
     icon: Crown1,
     title: "Grupo vip",
+    href: "https://chat.whatsapp.com/E8YRh5eM34UF7unEyAvjLx",
     text: "Entre no Grupo VIP da Cold para receber condiçõe exclusivas!",
   },
   {
     icon: Coin1,
     title: "Promoções",
+    href: "https://wa.me/5588992329487",
     text: "Clique para receber nossas promoções ativas e as exclusivas!",
   },
   {
     icon: EmptyWallet,
     title: "Cold Points",
+    href: "https://www.v2.donuz.co/ColdSuplementos/login",
     text: "Receba premiações em suas compras, clique para se cadastrar!",
   },
 ];
@@ -82,7 +86,8 @@ export default function Home() {
           {items.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div
+              <a
+                href={item.href}
                 key={index}
                 className="border-verde border-2 flex w-full rounded-lg py-3 bg-verde/5 items-center px-6"
               >
@@ -96,7 +101,7 @@ export default function Home() {
                   <p className="font-varien text-lg">{item.title}</p>
                   <p className="font-jura text-sm">{item.text}</p>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
