@@ -96,9 +96,13 @@ export default function Home() {
                   variant="Bold"
                   className="w-20"
                 />
-                <div className="flex flex-col ml-6">
-                  <p className="font-varien text-lg">{item.title}</p>
-                  <p className="font-jura text-sm">{item.text}</p>
+                <div className="flex flex-col ml-6 text-white-main">
+                  <p className="font-varien text-lg  text-white-main">
+                    {item.title}
+                  </p>
+                  <p className="font-jura text-sm  text-white-main">
+                    {item.text}
+                  </p>
                 </div>
               </a>
             );
