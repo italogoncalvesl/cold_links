@@ -20,7 +20,7 @@ const links = [
     icon: Instagram,
   },
   {
-    href: "https://www.google.com/maps/place/R.+Afonso+Ribeiro,+618/...",
+    href: "https://maps.app.goo.gl/DeovNtaDQho5KQi78",
     icon: Location,
   },
 ];
